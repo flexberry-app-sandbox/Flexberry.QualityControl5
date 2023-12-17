@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30611.23
+MinimumVisualStudioVersion = 15.0.26124.0
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QualityControl.Objects", "Objects/QualityControl.Objects.csproj", "3e712ad4-f130-4861-b4a1-4ab28cf15067"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QualityControl.Tests", "Tests/QualityControl.Tests.csproj", "ab6f938e-64c0-4baf-b9ef-696c72c1f096"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QualityControl.ODataBackend", "ODataBackend/QualityControl.ODataBackend.csproj", "e39ff404-2944-4244-9a64-d2176ca8342d"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QualityControl.IntegrationTests", "IntegrationTests/QualityControl.IntegrationTests.csproj", "111fe6ed-82e9-4785-ad9f-48954f3c2b5f"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+Debug|Any CPU = Debug|Any CPU
+Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		3e712ad4-f130-4861-b4a1-4ab28cf15067.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		3e712ad4-f130-4861-b4a1-4ab28cf15067.Debug|Any CPU.Build.0 = Debug|Any CPU
+		3e712ad4-f130-4861-b4a1-4ab28cf15067.Release|Any CPU.ActiveCfg = Release|Any CPU
+		3e712ad4-f130-4861-b4a1-4ab28cf15067.Release|Any CPU.Build.0 = Release|Any CPU
+		ab6f938e-64c0-4baf-b9ef-696c72c1f096.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		ab6f938e-64c0-4baf-b9ef-696c72c1f096.Debug|Any CPU.Build.0 = Debug|Any CPU
+		ab6f938e-64c0-4baf-b9ef-696c72c1f096.Release|Any CPU.ActiveCfg = Release|Any CPU
+		ab6f938e-64c0-4baf-b9ef-696c72c1f096.Release|Any CPU.Build.0 = Release|Any CPU
+		e39ff404-2944-4244-9a64-d2176ca8342d.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		e39ff404-2944-4244-9a64-d2176ca8342d.Debug|Any CPU.Build.0 = Debug|Any CPU
+		e39ff404-2944-4244-9a64-d2176ca8342d.Release|Any CPU.ActiveCfg = Release|Any CPU
+		e39ff404-2944-4244-9a64-d2176ca8342d.Release|Any CPU.Build.0 = Release|Any CPU
+		111fe6ed-82e9-4785-ad9f-48954f3c2b5f.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		111fe6ed-82e9-4785-ad9f-48954f3c2b5f.Debug|Any CPU.Build.0 = Debug|Any CPU
+		111fe6ed-82e9-4785-ad9f-48954f3c2b5f.Release|Any CPU.ActiveCfg = Release|Any CPU
+		111fe6ed-82e9-4785-ad9f-48954f3c2b5f.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

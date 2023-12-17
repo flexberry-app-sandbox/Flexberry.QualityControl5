@@ -1,0 +1,92 @@
+﻿{
+  "name": "IISQualityControlПроверяемые",
+  "modelName": "i-i-s-quality-control-проверяемые",
+  "className": "Проверяемые",
+  "nameSpace": "IIS.QualityControl",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "качество",
+      "type": "i-i-s-quality-control-качество",
+      "flexberryType": "Качество",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "количество",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "продукция",
+      "relatedTo": "i-i-s-quality-control-продукция",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "отчет",
+      "relatedTo": "i-i-s-quality-control-отчет",
+      "inverse": "проверяемые"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ПроверяемыеE",
+      "modelName": "i-i-s-quality-control-проверяемые",
+      "attrs": [
+        {
+          "name": "количество",
+          "caption": "Количество",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "качество",
+          "caption": "Качество",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Название",
+          "lookupValueField": "название",
+          "relationName": "Продукция",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "название",
+              "caption": "Название",
+              "hidden": true,
+              "index": 3
+            }
+          ],
+          "index": 2,
+          "type": "standard",
+          "caption": "Продукция",
+          "name": "продукция",
+          "relatedTo": "i-i-s-quality-control-продукция",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}
